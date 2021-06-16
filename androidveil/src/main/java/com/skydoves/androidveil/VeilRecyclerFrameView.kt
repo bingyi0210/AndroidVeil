@@ -244,6 +244,11 @@ class VeilRecyclerFrameView : RelativeLayout {
     return this.userRecyclerView
   }
 
+  /** add ItemDecoration to userRecyclerView. */
+  fun addItemDecoration(decor:RecyclerView.ItemDecoration){
+    this.userRecyclerView.addItemDecoration(decor)
+  }
+
   /** Visible veiledRecyclerView and Invisible userRecyclerView. */
   private fun visibleVeilRecyclerView() {
     this.veiledRecyclerView.visible()
